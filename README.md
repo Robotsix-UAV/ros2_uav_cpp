@@ -1,13 +1,13 @@
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 [![Tests](https://github.com/Robotsix-UAV/ros2_uav_cpp/actions/workflows/build_test.yaml/badge.svg?branch=main)](https://github.com/Robotsix-UAV/ros2_uav_cpp/actions/workflows/build_test.yaml)
-[![lcov](https://robotsix-UAV.github.io/ros2_uav_cpp/v0.9/lcov/badge.svg)](https://robotsix-UAV.github.io/ros2_uav_cpp/v0.9/lcov)
+[![lcov](https://robotsix-UAV.github.io/ros2_uav_cpp/v0.1/lcov/badge.svg)](https://robotsix-UAV.github.io/ros2_uav_cpp/v0.1/lcov)
 
 # UAV CPP
 
 ## Documentation
 
-Package overview and user documentation can be found at [ROS2 UAV CPP Documentation](https://robotsix-UAV.github.io/ros2_uav_cpp/v0.9). \
-Developer documentation can be found at [ROS2 UAV CPP Developer Documentation](https://robotsix-UAV.github.io/ros2_uav_cpp/v0.9/dev/ros2_uav_cpp).
+Package overview and user documentation can be found at [ROS2 UAV CPP Documentation](https://robotsix-UAV.github.io/ros2_uav_cpp/v0.1). \
+Developer documentation can be found at [ROS2 UAV CPP Developer Documentation](https://robotsix-UAV.github.io/ros2_uav_cpp/v0.1/dev/ros2_uav_cpp).
 
 ## Support
 
