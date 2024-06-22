@@ -15,6 +15,8 @@
 #include <gtest/gtest.h>
 #include "ros2_uav_cpp/ros2_logger.hpp"
 
+using ros2_uav::utils::RosLoggerInterface;
+
 TEST(RosLoggerInterface, Console)
 {
   // Create a logger

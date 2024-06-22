@@ -18,6 +18,8 @@
 #include <rclcpp/rclcpp.hpp>
 #include <uav_cpp/utils/logger.hpp>
 
+namespace ros2_uav::utils
+{
 class RosLoggerInterface : public uav_cpp::logger::LoggerInterface
 {
 public:
@@ -48,3 +50,4 @@ public:
 private:
   rclcpp::Logger logger_;
 };
+}  // namespace ros2_uav::utils
