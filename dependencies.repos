@@ -1,0 +1,5 @@
+repositories:
+    uav_cpp:
+        type: git
+        url: https://github.com/Robotsix-UAV/uav_cpp
+        version: main
