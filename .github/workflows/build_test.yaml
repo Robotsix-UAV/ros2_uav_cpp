@@ -82,7 +82,7 @@ jobs:
         run: |
           source /opt/ros/humble/setup.bash
           colcon lcov-result --initial --packages-select ${{ github.event.repository.name }}
-          colcon test --event-handlers console_direct+ --packages-select ${{ github.event.repository.name }}
+          colcon test --event-handlers console_direct+ --packages-select ${{ github.event.repository.name }} --return-code-on-test-failure
           colcon lcov-result --filter */test/* --packages-select ${{ github.event.repository.name }}
 
       - name: Get documentation directory for deployment
