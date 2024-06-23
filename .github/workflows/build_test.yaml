@@ -81,9 +81,9 @@ jobs:
       - name: Test and generate code coverage
         run: |
           source /opt/ros/humble/setup.bash
-          colcon lcov-result --initial
+          colcon lcov-result --initial --packages-select ${{ github.event.repository.name }}
           colcon test --event-handlers console_direct+ --packages-select ${{ github.event.repository.name }}
-          colcon lcov-result --filter */test/*
+          colcon lcov-result --filter */test/* --packages-select ${{ github.event.repository.name }}
 
       - name: Get documentation directory for deployment
         run: |
@@ -138,7 +138,7 @@ jobs:
 
       - name: Generate badge
         run: |
-          git clone https://github.com/RaZeR-RBI/lcov-badger.git
+          git clone https://github.com/damien-robotsix/lcov-badger.git
           python3 lcov-badger/lcov-badger.py ${{ github.event.repository.name }}/${{ env.DEPLOY_REF }}/lcov/total_coverage.info ${{ github.event.repository.name }}/${{ env.DEPLOY_REF }}/lcov/badge.svg
 
       - name: Copy generated documentation
