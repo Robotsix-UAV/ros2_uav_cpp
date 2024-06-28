@@ -2,7 +2,7 @@
 <?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
 <package format="3">
   <name>ros2_uav_cpp</name>
-  <version>0.1.5</version>
+  <version>0.1.6</version>
   <description>A ROS2 wrapper for cpp_uav library</description>
   <maintainer email="damien@robotsix.net">Damien SIX</maintainer>
   <license>Apache-2.0</license>
