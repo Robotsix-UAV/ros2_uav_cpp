@@ -124,11 +124,13 @@ jobs:
           rosdoc2 build -p ${{ github.workspace }}/src/${{ github.event.repository.name }}
 
       - name: Clone and checkout gh-pages branch
-        run: |
-          git clone https://github.com/${{ github.repository }}
+        uses: actions/checkout@v4
+        with:
+          ref: gh-pages
+
+      - name: Fetch gh-pages branch
           cd ${{ github.event.repository.name }}
           git fetch origin gh-pages --depth=1
-          git checkout gh-pages
 
       - name: Copy lcov results
         run: |
