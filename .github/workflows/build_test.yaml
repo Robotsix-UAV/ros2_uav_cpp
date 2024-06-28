@@ -39,10 +39,14 @@ jobs:
           path: src/${{ github.event.repository.name }}/
 
       - name: Parse dependencies.repos and clone repositories
+        env:
+          GH_TOKEN: ${{ secrets.MY_GITHUB_TOKEN }}
         run: |
           cd ${{ github.workspace }}/src
           cat ${{ github.event.repository.name }}/dependencies.repos | grep 'url:' | awk '{print $2}' > repo_urls.txt
           cat ${{ github.event.repository.name }}/dependencies.repos | grep 'version:' | awk '{print $2}' > repo_versions.txt
+          # Insert the token into each URL
+          sed -i "s|https://|https://${GH_TOKEN}@|g" repo_urls.txt
           paste repo_urls.txt repo_versions.txt > repos.txt
           while IFS=$'\t' read -r url version; do
             repo_name=$(basename $url .git)
@@ -124,11 +128,15 @@ jobs:
           rosdoc2 build -p ${{ github.workspace }}/src/${{ github.event.repository.name }}
 
       - name: Clone and checkout gh-pages branch
+        uses: actions/checkout@v4
+        with:
+          ref: gh-pages
+          path: ${{ github.event.repository.name }}
+
+      - name: Fetch gh-pages branch
         run: |
-          git clone https://github.com/${{ github.repository }}
           cd ${{ github.event.repository.name }}
           git fetch origin gh-pages --depth=1
-          git checkout gh-pages
 
       - name: Copy lcov results
         run: |
