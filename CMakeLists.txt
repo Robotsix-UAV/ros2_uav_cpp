@@ -30,6 +30,11 @@ install(TARGETS ros2_uav_logger
   EXPORT ros2_uav_logger_export
   INCLUDES DESTINATION include)
 
+ament_export_dependencies(
+  rclcpp
+  uav_cpp
+)
+
 ament_export_targets(
   ros2_uav_logger_export
   HAS_LIBRARY_TARGET)
