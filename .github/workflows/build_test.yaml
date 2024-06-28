@@ -129,6 +129,7 @@ jobs:
           ref: gh-pages
 
       - name: Fetch gh-pages branch
+        run: |
           cd ${{ github.event.repository.name }}
           git fetch origin gh-pages --depth=1
 
