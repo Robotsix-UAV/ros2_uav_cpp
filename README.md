@@ -1,5 +1,5 @@
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
-[![Tests](https://github.com/Robotsix-UAV/ros2_uav_cpp/actions/workflows/build_test.yaml/badge.svg?branch=main)](https://github.com/Robotsix-UAV/ros2_uav_cpp/actions/workflows/build_test.yaml)
+[![Tests](https://github.com/Robotsix-UAV/ros2_uav_cpp/actions/workflows/build-test.yaml/badge.svg?branch=main)](https://github.com/Robotsix-UAV/ros2_uav_cpp/actions/workflows/build-test.yaml)
 [![lcov](https://robotsix-UAV.github.io/ros2_uav_cpp/v0.1/lcov/badge.svg)](https://robotsix-UAV.github.io/ros2_uav_cpp/v0.1/lcov)
 
 # UAV CPP
