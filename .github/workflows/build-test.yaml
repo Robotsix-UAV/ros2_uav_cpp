@@ -1,0 +1,18 @@
+name: Test
+
+permissions: write-all
+
+on:
+  pull_request:
+    branches:
+      - main
+  workflow_run:
+    workflows: ["Versioning"]
+    types:
+      - completed
+
+jobs:
+  call-workflow:
+    uses: Robotsix-UAV/robotsix_workflows/.github/workflows/build-test.yaml@main
+    secrets:
+      MY_GITHUB_TOKEN: ${{ secrets.MY_GITHUB_TOKEN }}

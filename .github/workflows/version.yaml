@@ -1,44 +1,12 @@
 name: Versioning
 
+permissions:
+  contents: write
+
 on:
   push:
     branches: [main]
 
-permissions:
-  contents: write
-
 jobs:
-  versioning:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
-      - name: Calculate version
-        id: calculate_version
-        uses: bitshifted/git-auto-semver@v1
-        with:
-          main_branch: main
-          initial_version: 0.1.0
-      - name: Echo version
-        run: echo "Calculated version ${{ steps.calculate_version.outputs.version-string }}"
-      - name: checkout
-        uses: actions/checkout@v4
-      - name: Update README version
-        run: |
-          SHORT_VERSION=$(echo ${{ steps.calculate_version.outputs.version-string }} | cut -d. -f1,2)
-          sed -i "s/v[0-9]*\.[0-9]*/v$SHORT_VERSION/g" README.md
-      - name: Update package.xml version
-        run: |
-          sed -i "s/<version>.*<\/version>/<version>${{ steps.calculate_version.outputs.version-string }}<\/version>/" package.xml
-      - name: Commit version update
-        id: commit
-        run: |
-          git config --local user.name "robotsix_bot"
-          git config --local user.email "robotsix_bot@noreply.com"
-          git commit -am "[skip ci] version update to v${{ steps.calculate_version.outputs.version-string }}"
-          git push
-          git push origin --delete v${{ steps.calculate_version.outputs.version-string }} || true
-          git tag -a v${{ steps.calculate_version.outputs.version-string }} -m v${{ steps.calculate_version.outputs.version-string }}
-          git push origin v${{ steps.calculate_version.outputs.version-string }}
+  call-workflow:
+    uses: Robotsix-UAV/robotsix_workflows/.github/workflows/version.yaml@main

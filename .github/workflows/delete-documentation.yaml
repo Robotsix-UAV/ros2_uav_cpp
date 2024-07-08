@@ -16,24 +16,5 @@ permissions:
   contents: write
 
 jobs:
-  delete-documentation:
-    name: Delete Mkdocs Documentation
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout the repository
-        uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
-        with:
-          python-version: 3.x
-      - name: Delete with mike
-        run: |
-          pip install mike
-          git config --local user.name robotsix_bot
-          git config --local user.email robotsix_bot@noreply.com
-          git fetch origin gh-pages --depth=1
-          cd ${{ github.workspace }}
-          if [ "${{ github.event_name }}" = "pull_request" ]; then
-            mike delete PR-${{ github.event.number }} -b gh-pages -p
-          else
-            mike delete ${{ github.event.inputs.folder }} -b gh-pages -p
-          fi
+  call-workflow:
+    uses: Robotsix-UAV/robotsix_workflows/.github/workflows/delete-documentation.yaml@main

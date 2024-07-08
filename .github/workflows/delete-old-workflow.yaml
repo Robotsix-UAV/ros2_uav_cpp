@@ -1,22 +1,16 @@
 name: Delete old workflow
 
+permissions:
+  actions: write
+  contents: read
+
 on:
   schedule:
     # Run at midnight every day
     - cron: "0 0 * * *"
+  workflow_dispatch:
 
 jobs:
-  del_runs:
-    name: Delete old workflow
-    runs-on: ubuntu-latest
-    permissions:
-      actions: write
-      contents: read
-    steps:
-      - name: Delete workflow runs
-        uses: Mattraks/delete-workflow-runs@v2
-        with:
-          token: ${{ github.token }}
-          repository: ${{ github.repository }}
-          retain_days: 1
-          keep_minimum_runs: 1
+  call-workflow:
+    uses: Robotsix-UAV/robotsix_workflows/.github/workflows/delete-old-workflow.yaml@main
+

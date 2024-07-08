@@ -1,0 +1,24 @@
+name: Deploy Docker Image
+
+permissions:
+  packages: write
+  contents: read
+  attestations: write
+
+on:
+  workflow_run:
+    workflows: ["Versioning"]
+    types:
+      - completed
+
+  workflow_dispatch:
+
+jobs:
+  call-workflow:
+    uses: Robotsix-UAV/robotsix_workflows/.github/workflows/build-docker.yaml@main
+    secrets:
+      MY_GITHUB_TOKEN: ${{ secrets.MY_GITHUB_TOKEN }}
+      DOCKER_USERNAME: ${{ secrets.DOCKER_USERNAME }}
+      DOCKER_TOKEN: ${{ secrets.DOCKER_TOKEN }}
+    with:
+      docker-repo: ${{ github.event.repository.name }}
