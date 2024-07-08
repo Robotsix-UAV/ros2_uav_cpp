@@ -1,0 +1,58 @@
+
+.. _file_include_ros2_uav_cpp_ros2_logger.hpp:
+
+File ros2_logger.hpp
+====================
+
+|exhale_lsh| :ref:`Parent directory <dir_include_ros2_uav_cpp>` (``include/ros2_uav_cpp``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+Definition (``include/ros2_uav_cpp/ros2_logger.hpp``)
+-----------------------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_include_ros2_uav_cpp_ros2_logger.hpp.rst
+
+
+
+
+
+Includes
+--------
+
+
+- ``rclcpp/rclcpp.hpp``
+
+- ``string``
+
+- ``uav_cpp/utils/logger.hpp``
+
+
+
+
+
+
+Namespaces
+----------
+
+
+- :ref:`namespace_ros2_uav`
+
+- :ref:`namespace_ros2_uav__utils`
+
+
+Classes
+-------
+
+
+- :ref:`exhale_class_classros2__uav_1_1utils_1_1RosLoggerInterface`
+
