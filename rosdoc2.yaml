@@ -51,8 +51,7 @@ builders:
     - doxygen: {
         name: 'ros2_uav_cpp Public C/C++ API',
         output_dir: 'generated/doxygen',
-        extra_doxyfile_statements:  ['WARN_AS_ERROR=YES', 'WARN_IF_UNDOCUMENTED=YES', 'EXTRACT_ALL=YES', 
-                                    'PREDEFINED=DOXYGEN_SKIP']
+        extra_doxyfile_statements:  ['WARN_AS_ERROR=YES', 'WARN_IF_UNDOCUMENTED=YES', 'PREDEFINED=DOXYGEN_SKIP']
     }
     - sphinx: {
         name: 'ros2_uav_cpp',
