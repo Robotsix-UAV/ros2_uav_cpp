@@ -3,3 +3,7 @@ repositories:
         type: git
         url: https://github.com/Robotsix-UAV/uav_cpp
         version: main
+    acados_vendor_ros2:
+        type: git
+        url: https://github.com/damien-robotsix/acados_vendor_ros2
+        version: main
