@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.11.0" xml:lang="en-US">
+  <compounddef id="namespaceros2__uav_1_1utils" kind="namespace" language="C++">
+    <compoundname>ros2_uav::utils</compoundname>
+    <innerclass refid="classros2__uav_1_1utils_1_1RosLoggerInterface" prot="public">ros2_uav::utils::RosLoggerInterface</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="author"><para>Damien SIX (<ulink url="mailto:damien@robotsix.net">damien@robotsix.net</ulink>) </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <location file="include/ros2_uav_cpp/ros2_logger.hpp" line="25" column="1"/>
+  </compounddef>
+</doxygen>

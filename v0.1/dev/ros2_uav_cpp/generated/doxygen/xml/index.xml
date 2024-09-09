@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.11.0" xml:lang="en-US">
+  <compound refid="classros2__uav_1_1utils_1_1RosLoggerInterface" kind="class"><name>ros2_uav::utils::RosLoggerInterface</name>
+    <member refid="classros2__uav_1_1utils_1_1RosLoggerInterface_1a7dc5aa375e77b78870db6e11e6117999" kind="variable"><name>logger_</name></member>
+    <member refid="classros2__uav_1_1utils_1_1RosLoggerInterface_1a82e3a23d675472ff6586dee5a0ef83bc" kind="function"><name>RosLoggerInterface</name></member>
+    <member refid="classros2__uav_1_1utils_1_1RosLoggerInterface_1a212918ac63f736e95761af01cd8bbd6a" kind="function"><name>debug</name></member>
+    <member refid="classros2__uav_1_1utils_1_1RosLoggerInterface_1a61897c5989a318e7c59aac272e623b77" kind="function"><name>info</name></member>
+    <member refid="classros2__uav_1_1utils_1_1RosLoggerInterface_1a85c34088ebe4527743a98b3fe8f24375" kind="function"><name>warn</name></member>
+    <member refid="classros2__uav_1_1utils_1_1RosLoggerInterface_1a1b8cb8386838b97216752b8d5dae3942" kind="function"><name>error</name></member>
+    <member refid="classros2__uav_1_1utils_1_1RosLoggerInterface_1a97590e6eb94b0403be8937248cb22283" kind="function"><name>fatal</name></member>
+  </compound>
+  <compound refid="namespaceros2__uav" kind="namespace"><name>ros2_uav</name>
+  </compound>
+  <compound refid="namespaceros2__uav_1_1utils" kind="namespace"><name>ros2_uav::utils</name>
+  </compound>
+  <compound refid="namespaceuav__cpp" kind="namespace"><name>uav_cpp</name>
+  </compound>
+  <compound refid="namespaceuav__cpp_1_1logger" kind="namespace"><name>uav_cpp::logger</name>
+  </compound>
+  <compound refid="ros2__logger_8hpp" kind="file"><name>ros2_logger.hpp</name>
+  </compound>
+  <compound refid="dir_d44c64559bbebec7f509842c48db8b23" kind="dir"><name>include</name>
+  </compound>
+  <compound refid="dir_799a46d3d94940670ce69ac6af3f537b" kind="dir"><name>include/ros2_uav_cpp</name>
+  </compound>
+</doxygenindex>

@@ -1,0 +1,169 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.11.0" xml:lang="en-US">
+  <compounddef id="classros2__uav_1_1utils_1_1RosLoggerInterface" kind="class" language="C++" prot="public">
+    <compoundname>ros2_uav::utils::RosLoggerInterface</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">uav_cpp::logger::LoggerInterface</basecompoundref>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classros2__uav_1_1utils_1_1RosLoggerInterface_1a7dc5aa375e77b78870db6e11e6117999" prot="private" static="no" mutable="no">
+        <type>rclcpp::Logger</type>
+        <definition>rclcpp::Logger ros2_uav::utils::RosLoggerInterface::logger_</definition>
+        <argsstring></argsstring>
+        <name>logger_</name>
+        <qualifiedname>ros2_uav::utils::RosLoggerInterface::logger_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/ros2_uav_cpp/ros2_logger.hpp" line="55" column="18" bodyfile="include/ros2_uav_cpp/ros2_logger.hpp" bodystart="55" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classros2__uav_1_1utils_1_1RosLoggerInterface_1a82e3a23d675472ff6586dee5a0ef83bc" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>ros2_uav::utils::RosLoggerInterface::RosLoggerInterface</definition>
+        <argsstring>(rclcpp::Logger logger)</argsstring>
+        <name>RosLoggerInterface</name>
+        <qualifiedname>ros2_uav::utils::RosLoggerInterface::RosLoggerInterface</qualifiedname>
+        <param>
+          <type>rclcpp::Logger</type>
+          <declname>logger</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/ros2_uav_cpp/ros2_logger.hpp" line="30" column="12" bodyfile="include/ros2_uav_cpp/ros2_logger.hpp" bodystart="30" bodyend="31"/>
+      </memberdef>
+      <memberdef kind="function" id="classros2__uav_1_1utils_1_1RosLoggerInterface_1a212918ac63f736e95761af01cd8bbd6a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ros2_uav::utils::RosLoggerInterface::debug</definition>
+        <argsstring>(const std::string &amp;msg) override</argsstring>
+        <name>debug</name>
+        <qualifiedname>ros2_uav::utils::RosLoggerInterface::debug</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>msg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/ros2_uav_cpp/ros2_logger.hpp" line="33" column="8" bodyfile="include/ros2_uav_cpp/ros2_logger.hpp" bodystart="33" bodyend="36"/>
+      </memberdef>
+      <memberdef kind="function" id="classros2__uav_1_1utils_1_1RosLoggerInterface_1a61897c5989a318e7c59aac272e623b77" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ros2_uav::utils::RosLoggerInterface::info</definition>
+        <argsstring>(const std::string &amp;msg) override</argsstring>
+        <name>info</name>
+        <qualifiedname>ros2_uav::utils::RosLoggerInterface::info</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>msg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/ros2_uav_cpp/ros2_logger.hpp" line="37" column="8" bodyfile="include/ros2_uav_cpp/ros2_logger.hpp" bodystart="37" bodyend="40"/>
+      </memberdef>
+      <memberdef kind="function" id="classros2__uav_1_1utils_1_1RosLoggerInterface_1a85c34088ebe4527743a98b3fe8f24375" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ros2_uav::utils::RosLoggerInterface::warn</definition>
+        <argsstring>(const std::string &amp;msg) override</argsstring>
+        <name>warn</name>
+        <qualifiedname>ros2_uav::utils::RosLoggerInterface::warn</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>msg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/ros2_uav_cpp/ros2_logger.hpp" line="41" column="8" bodyfile="include/ros2_uav_cpp/ros2_logger.hpp" bodystart="41" bodyend="44"/>
+      </memberdef>
+      <memberdef kind="function" id="classros2__uav_1_1utils_1_1RosLoggerInterface_1a1b8cb8386838b97216752b8d5dae3942" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ros2_uav::utils::RosLoggerInterface::error</definition>
+        <argsstring>(const std::string &amp;msg) override</argsstring>
+        <name>error</name>
+        <qualifiedname>ros2_uav::utils::RosLoggerInterface::error</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>msg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/ros2_uav_cpp/ros2_logger.hpp" line="45" column="8" bodyfile="include/ros2_uav_cpp/ros2_logger.hpp" bodystart="45" bodyend="48"/>
+      </memberdef>
+      <memberdef kind="function" id="classros2__uav_1_1utils_1_1RosLoggerInterface_1a97590e6eb94b0403be8937248cb22283" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ros2_uav::utils::RosLoggerInterface::fatal</definition>
+        <argsstring>(const std::string &amp;msg) override</argsstring>
+        <name>fatal</name>
+        <qualifiedname>ros2_uav::utils::RosLoggerInterface::fatal</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>msg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/ros2_uav_cpp/ros2_logger.hpp" line="49" column="8" bodyfile="include/ros2_uav_cpp/ros2_logger.hpp" bodystart="49" bodyend="52"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>ros2_uav::utils::RosLoggerInterface</label>
+        <link refid="classros2__uav_1_1utils_1_1RosLoggerInterface"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>uav_cpp::logger::LoggerInterface</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>ros2_uav::utils::RosLoggerInterface</label>
+        <link refid="classros2__uav_1_1utils_1_1RosLoggerInterface"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>uav_cpp::logger::LoggerInterface</label>
+      </node>
+    </collaborationgraph>
+    <location file="include/ros2_uav_cpp/ros2_logger.hpp" line="27" column="1" bodyfile="include/ros2_uav_cpp/ros2_logger.hpp" bodystart="28" bodyend="56"/>
+    <listofallmembers>
+      <member refid="classros2__uav_1_1utils_1_1RosLoggerInterface_1a212918ac63f736e95761af01cd8bbd6a" prot="public" virt="non-virtual"><scope>ros2_uav::utils::RosLoggerInterface</scope><name>debug</name></member>
+      <member refid="classros2__uav_1_1utils_1_1RosLoggerInterface_1a1b8cb8386838b97216752b8d5dae3942" prot="public" virt="non-virtual"><scope>ros2_uav::utils::RosLoggerInterface</scope><name>error</name></member>
+      <member refid="classros2__uav_1_1utils_1_1RosLoggerInterface_1a97590e6eb94b0403be8937248cb22283" prot="public" virt="non-virtual"><scope>ros2_uav::utils::RosLoggerInterface</scope><name>fatal</name></member>
+      <member refid="classros2__uav_1_1utils_1_1RosLoggerInterface_1a61897c5989a318e7c59aac272e623b77" prot="public" virt="non-virtual"><scope>ros2_uav::utils::RosLoggerInterface</scope><name>info</name></member>
+      <member refid="classros2__uav_1_1utils_1_1RosLoggerInterface_1a7dc5aa375e77b78870db6e11e6117999" prot="private" virt="non-virtual"><scope>ros2_uav::utils::RosLoggerInterface</scope><name>logger_</name></member>
+      <member refid="classros2__uav_1_1utils_1_1RosLoggerInterface_1a82e3a23d675472ff6586dee5a0ef83bc" prot="public" virt="non-virtual"><scope>ros2_uav::utils::RosLoggerInterface</scope><name>RosLoggerInterface</name></member>
+      <member refid="classros2__uav_1_1utils_1_1RosLoggerInterface_1a85c34088ebe4527743a98b3fe8f24375" prot="public" virt="non-virtual"><scope>ros2_uav::utils::RosLoggerInterface</scope><name>warn</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

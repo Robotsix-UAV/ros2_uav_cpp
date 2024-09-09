@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.11.0" xml:lang="en-US">
+  <compounddef id="dir_799a46d3d94940670ce69ac6af3f537b" kind="dir">
+    <compoundname>include/ros2_uav_cpp</compoundname>
+    <innerfile refid="ros2__logger_8hpp">ros2_logger.hpp</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="include/ros2_uav_cpp/"/>
+  </compounddef>
+</doxygen>
